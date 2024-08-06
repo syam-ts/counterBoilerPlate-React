@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Counter extends Component {
 
-
+interface CounterState {
+  count: number
+}
+export default class Counter extends Component<{}, CounterState> {
+ 
     constructor(props: any) {
       super(props)
       this.state = {
